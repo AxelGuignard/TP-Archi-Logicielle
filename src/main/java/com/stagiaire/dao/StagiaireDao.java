@@ -5,7 +5,7 @@ import java.util.List;
 import com.stagiaires.pojos.Stagiaire;
 public class StagiaireDao extends Dao<Stagiaire> {
     public static final String TABLE_NAME = "stagiaire";
-    StagiareDao(Database db)
+    StagiaireDao(Database db)
     {
         super(db, TABLE_NAME);
     }

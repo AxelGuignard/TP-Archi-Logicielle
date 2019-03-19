@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class GroupeDao extends Dao
+public class GroupeDao extends Dao<Groupe>
 {
     GroupeDao(Database db, String tableName)
     {
@@ -26,25 +26,25 @@ public class GroupeDao extends Dao
     }
 
     @Override
-    public Groupe insert(Object obj)
+    public Groupe insert(Groupe obj)
     {
         return null;
     }
 
     @Override
-    public void update(Object obj)
+    public void update(Groupe obj)
     {
 
     }
 
     @Override
-    public void delete(Object obj)
+    public void delete(Groupe obj)
     {
 
     }
 
     @Override
-    public Object load(ResultSet resultSet) throws SQLException
+    public Groupe load(ResultSet resultSet) throws SQLException
     {
         return null;
     }

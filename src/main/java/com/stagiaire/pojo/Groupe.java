@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Groupe
 {
-    private int idGroupe;
+    private long idGroupe;
     private String nom;
     private Date dateDebut;
     private Date dateFin;
 
-    Groupe(int idGroupe, String nom, Date dateDebut, Date dateFin)
+    Groupe(long idGroupe, String nom, Date dateDebut, Date dateFin)
     {
         this.idGroupe = idGroupe;
         this.nom = nom;
@@ -18,9 +18,14 @@ public class Groupe
     }
 
 
-    public int getIdGroupe()
+    public long getIdGroupe()
     {
         return idGroupe;
+    }
+
+    public void setIdGroupe(long idGroupe)
+    {
+        this.idGroupe = idGroupe;
     }
 
     public String getNom()

@@ -2,14 +2,14 @@ package main.java.com.stagiaire.pojo;
 
 public class Stagiaire
 {
-    private int idStagiaire;
+    private long idStagiaire;
     private String nom;
     private String prenom;
     private int idVille;
     private int idGroupe;
 
 
-    public Stagiaire(int idStagiaire, String nom, String prenom, int idVille, int idGroupe)
+    public Stagiaire(long idStagiaire, String nom, String prenom, int idVille, int idGroupe)
     {
         this.idStagiaire = idStagiaire;
         this.nom = nom;
@@ -18,9 +18,14 @@ public class Stagiaire
         this.idGroupe = idGroupe;
     }
 
-    public int getIdStagiaire()
+    public long getIdStagiaire()
     {
         return idStagiaire;
+    }
+
+    public void setIdStagiaire(long idStagiaire)
+    {
+        this.idStagiaire = idStagiaire;
     }
 
     public String getNom()

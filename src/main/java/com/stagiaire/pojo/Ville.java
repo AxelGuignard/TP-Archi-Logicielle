@@ -2,18 +2,23 @@ package main.java.com.stagiaire.pojo;
 
 public class Ville
 {
-    private int idVille;
+    private long idVille;
     private String nom;
 
-    public Ville(int idVille, String nom)
+    public Ville(long idVille, String nom)
     {
         this.idVille = idVille;
         this.nom = nom;
     }
 
-    public int getIdVille()
+    public long getIdVille()
     {
         return idVille;
+    }
+
+    public void setIdVille(long idVille)
+    {
+        this.idVille = idVille;
     }
 
     public String getNom()

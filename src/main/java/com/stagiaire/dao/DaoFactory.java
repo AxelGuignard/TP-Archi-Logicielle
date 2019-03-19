@@ -10,7 +10,7 @@ public class DaoFactory {
         return new VilleDao(db);
     }
     public GroupeDao getGroupeDao() {
-        return new GroupeDao(db);
+        return new GroupeDao(db, "groupe");
     }
     public StagiaireDao getStagiaireDao() {
         return new StagiaireDao(db);

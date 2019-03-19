@@ -1,5 +1,5 @@
-package main.java.com.epsi.stagiaire.dao;
-import main.java.com.epsi.stagiaire.dao.Database;
+package main.java.com.stagiaire.dao;
+import main.java.com.stagiaire.dao.Database;
 
 public class DaoFactory {
     private Database db;

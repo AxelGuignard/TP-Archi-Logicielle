@@ -2,7 +2,7 @@ package main.java.com.stagiaire.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import com.stagiaires.pojos.Stagiaire;
+import main.java.com.stagiaire.pojo.Stagiaire;
 
 public class StagiaireDao extends Dao<Stagiaire> {
     public static final String TABLE_NAME = "stagiaire";
@@ -12,8 +12,7 @@ public class StagiaireDao extends Dao<Stagiaire> {
     }
     @Override
     public Stagiaire find(long id) {
-        String requete = String.format("SELECT * FROM %s WHERE idStagiaire =
-                ?", TABLE_NAME);
+        String requete = String.format("SELECT * FROM %s WHERE idStagiaire = ?", TABLE_NAME);
         return getItemOnQuery(requete, id);
     }
     @Override
@@ -36,7 +35,7 @@ public class StagiaireDao extends Dao<Stagiaire> {
                 " WHERE idStagiaire = ?", TABLE_NAME);
         update(requete
                 , obj.getNom()
-                , obj.getIdstagiaire());
+                , obj.getIdStagiaire());
     }
     @Override
     public void delete(Stagiaire obj) {

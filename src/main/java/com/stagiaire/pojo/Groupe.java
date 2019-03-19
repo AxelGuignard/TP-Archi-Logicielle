@@ -7,15 +7,16 @@ public class Groupe
     private long idGroupe;
     private String nom;
     private Date dateDebut;
+    private Date dateDebutStage;
     private Date dateFin;
 
-    Groupe(long idGroupe, String nom, Date dateDebut, Date dateFin)
-    {
-        this.idGroupe = idGroupe;
-        this.nom = nom;
-        this.dateDebut = dateDebut;
-        this.dateFin = dateFin;
-    }
+//    Groupe(long idGroupe, String nom, Date dateDebut, Date dateFin)
+//    {
+//        this.idGroupe = idGroupe;
+//        this.nom = nom;
+//        this.dateDebut = dateDebut;
+//        this.dateFin = dateFin;
+//    }
 
 
     public long getIdGroupe()
@@ -56,5 +57,15 @@ public class Groupe
     public void setDateFin(Date dateFin)
     {
         this.dateFin = dateFin;
+    }
+
+    public Date getDateDebutStage()
+    {
+        return dateDebutStage;
+    }
+
+    public void setDateDebutStage(Date dateDebutStage)
+    {
+        this.dateDebutStage = dateDebutStage;
     }
 }

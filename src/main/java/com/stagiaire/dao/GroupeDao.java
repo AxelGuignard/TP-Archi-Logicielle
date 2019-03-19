@@ -42,14 +42,13 @@ public class GroupeDao extends Dao<Groupe>
 
     @Override
     public void update(Groupe obj)
+    {
         String requete = String.format("UPDATE %s SET " + " nom = ? " + " WHERE idGroupe = ?", TABLE_NAME);
         update(requete
-            , obj.getNom()
-            , obj.getDateDebut()
-            , obj.getDateDebutStage()
-            , obj.getDateFin());
-    {
-
+                , obj.getNom()
+                , obj.getDateDebut()
+                , obj.getDateDebutStage()
+                , obj.getDateFin());
     }
 
     @Override

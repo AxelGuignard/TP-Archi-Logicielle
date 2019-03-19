@@ -5,11 +5,11 @@ public class Ville
     private long idVille;
     private String nom;
 
-    public Ville(long idVille, String nom)
-    {
-        this.idVille = idVille;
-        this.nom = nom;
-    }
+//    public Ville(long idVille, String nom)
+//    {
+//        this.idVille = idVille;
+//        this.nom = nom;
+//    }
 
     public long getIdVille()
     {

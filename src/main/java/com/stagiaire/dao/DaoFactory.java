@@ -1,5 +1,5 @@
-package main.java.com.epsi.stagiaire.dao;
-import main.java.com.epsi.stagiaire.dao.Database;
+package main.java.com.stagiaire.dao;
+import main.java.com.stagiaire.dao.Database;
 
 public class DaoFactory {
     private Database db;
@@ -10,7 +10,7 @@ public class DaoFactory {
         return new VilleDao(db);
     }
     public GroupeDao getGroupeDao() {
-        return new GroupeDao(db);
+        return new GroupeDao(db, "groupe");
     }
     public StagiaireDao getStagiaireDao() {
         return new StagiaireDao(db);

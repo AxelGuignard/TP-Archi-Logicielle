@@ -1,16 +1,19 @@
 package main.java.com.stagiaire.dao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 public abstract class Dao<T> {
     private Connection connection = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
     protected Database db;
     protected String tableName;
+
     Dao(Database db, String tableName)
     {
         this.db = db;

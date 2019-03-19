@@ -1,13 +1,15 @@
 package main.java.com.stagiaire.pojo;
 
+import java.util.Date;
+
 public class Groupe
 {
     private int idGroupe;
     private String nom;
-    private String dateDebut;
-    private String dateFin;
+    private Date dateDebut;
+    private Date dateFin;
 
-    Groupe(int idGroupe, String nom, String dateDebut, String dateFin)
+    Groupe(int idGroupe, String nom, Date dateDebut, Date dateFin)
     {
         this.idGroupe = idGroupe;
         this.nom = nom;
@@ -31,22 +33,22 @@ public class Groupe
         this.nom = nom;
     }
 
-    public String getDateDebut()
+    public Date getDateDebut()
     {
         return dateDebut;
     }
 
-    public void setDateDebut(String dateDebut)
+    public void setDateDebut(Date dateDebut)
     {
         this.dateDebut = dateDebut;
     }
 
-    public String getDateFin()
+    public Date getDateFin()
     {
         return dateFin;
     }
 
-    public void setDateFin(String dateFin)
+    public void setDateFin(Date dateFin)
     {
         this.dateFin = dateFin;
     }

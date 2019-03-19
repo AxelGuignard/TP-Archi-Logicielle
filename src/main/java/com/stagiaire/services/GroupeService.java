@@ -2,7 +2,7 @@ package main.java.com.stagiaire.services;
 import java.util.List;
 import main.java.com.stagiaire.dao.DaoFactory;
 import main.java.com.stagiaire.dao.GroupeDao;
-import main.java.com.stagiaire.pojos.Groupe;
+import main.java.com.stagiaire.pojo.Groupe;
 
 public class GroupeService {
     private DaoFactory daoFactory;

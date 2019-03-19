@@ -3,6 +3,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import com.stagiaires.pojos.Stagiaire;
+
 public class StagiaireDao extends Dao<Stagiaire> {
     public static final String TABLE_NAME = "stagiaire";
     StagiaireDao(Database db)

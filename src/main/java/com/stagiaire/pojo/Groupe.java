@@ -10,10 +10,16 @@ public class Groupe
     private Date dateDebutStage;
     private Date dateFin;
 
-    Groupe(String nom, Date dateDebut, Date dateFin)
+    public Groupe()
+    {
+
+    }
+
+    public Groupe(String nom, Date dateDebut, Date dateDebutStage, Date dateFin)
     {
         this.nom = nom;
         this.dateDebut = dateDebut;
+        this.dateDebutStage = dateDebutStage;
         this.dateFin = dateFin;
     }
 

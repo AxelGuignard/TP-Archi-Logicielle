@@ -3,6 +3,7 @@ import main.java.com.stagiaire.pojo.*;
 import main.java.com.stagiaire.services.*;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class Main {
 
@@ -27,8 +28,13 @@ public class Main {
                 Date currentDate = new Date();
                 for (int i = 0; i < 10; i++)
                 {
-                    groupeService.createGroupe(new Groupe("groupe" + i,currentDate,currentDate,DateUtils.addMonths(currentDate, 1)));
-                }//Todo: resolve imports
+                    groupeService.createGroupe(new Groupe("groupe" + i,currentDate,currentDate,currentDate));
+                }
+
+                for (Groupe groupe : groupeService.getAll())
+                {
+
+                }
             }
         }
         catch (IOException e)

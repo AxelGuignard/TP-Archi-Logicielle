@@ -1,4 +1,5 @@
 package main.java.com.stagiaire.services;
+import java.util.ArrayList;
 import java.util.List;
 import main.java.com.stagiaire.dao.DaoFactory;
 import main.java.com.stagiaire.dao.StagiaireDao;
@@ -33,5 +34,19 @@ public class StagiaireService {
     public List<Stagiaire> getAll() {
         StagiaireDao StagiaireDao = daoFactory.getStagiaireDao();
         return StagiaireDao.list();
+    }
+
+    public List<Stagiaire> getAllByGroupe(long idGroupe)
+    {
+        List<Stagiaire> stagiaires = new ArrayList<Stagiaire>();
+        for (Stagiaire stagiaire : this.getAll())
+        {
+            if(stagiaire.getIdGroupe() == idGroupe)
+            {
+                stagiaires.add(stagiaire);
+            }
+        }
+
+        return stagiaires;
     }
 } 

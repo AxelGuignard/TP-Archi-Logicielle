@@ -8,14 +8,18 @@ public class Stagiaire
     private int idVille;
     private int idGroupe;
 
-//    public Stagiaire(long idStagiaire, String nom, String prenom, int idVille, int idGroupe)
-//    {
-//        this.idStagiaire = idStagiaire;
-//        this.nom = nom;
-//        this.prenom = prenom;
-//        this.idVille = idVille;
-//        this.idGroupe = idGroupe;
-//    }
+    public Stagiaire()
+    {
+
+    }
+
+    public Stagiaire(String nom, String prenom, int idVille, int idGroupe)
+    {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.idVille = idVille;
+        this.idGroupe = idGroupe;
+    }
 
     public long getIdStagiaire()
     {

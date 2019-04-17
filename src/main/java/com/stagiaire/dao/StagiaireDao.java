@@ -22,10 +22,10 @@ public class StagiaireDao extends Dao<Stagiaire> {
     }
     @Override
     public Stagiaire insert(Stagiaire obj) {
-        String requete = String.format("INSERT INTO %s (nom)" +
-                " VALUES(?)", TABLE_NAME);
+        String requete = String.format("INSERT INTO %s (nom, prenom, idVille, idGroupe)" +
+                " VALUES(?, ?, ?, ?)", TABLE_NAME);
         obj.setIdStagiaire(insert(requete
-                , obj.getNom()));
+                , obj.getNom(), obj.getPrenom(), obj.getIdVille(), obj.getIdGroupe()));
         return obj;
     }
     @Override
@@ -48,6 +48,9 @@ public class StagiaireDao extends Dao<Stagiaire> {
         Stagiaire stagiaire = new Stagiaire();
         stagiaire.setIdStagiaire(resultSet.getInt("idStagiaire"));
         stagiaire.setNom(resultSet.getString("nom"));
+        stagiaire.setPrenom(resultSet.getString("prenom"));
+        stagiaire.setIdVille(resultSet.getInt("idVille"));
+        stagiaire.setIdGroupe(resultSet.getInt("idGroupe"));
         return stagiaire;
     }
 }

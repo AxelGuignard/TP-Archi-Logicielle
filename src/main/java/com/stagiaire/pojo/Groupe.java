@@ -10,13 +10,12 @@ public class Groupe
     private Date dateDebutStage;
     private Date dateFin;
 
-//    Groupe(long idGroupe, String nom, Date dateDebut, Date dateFin)
-//    {
-//        this.idGroupe = idGroupe;
-//        this.nom = nom;
-//        this.dateDebut = dateDebut;
-//        this.dateFin = dateFin;
-//    }
+    Groupe(String nom, Date dateDebut, Date dateFin)
+    {
+        this.nom = nom;
+        this.dateDebut = dateDebut;
+        this.dateFin = dateFin;
+    }
 
 
     public long getIdGroupe()

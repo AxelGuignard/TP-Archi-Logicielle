@@ -1,12 +1,12 @@
-package com.stagiaire.clients;
+package main.java.com.stagiaire.clients;
 import java.io.IOException;
-import com.stagiaire.dao.DaoConfigurationException;
-import com.stagiaire.dao.DaoFactory;
-import com.stagiaire.dao.Database;
-import com.stagiaire.dao.DatabaseFactory;
-import com.stagiaire.services.GroupeService;
-import com.stagiaire.services.StagiaireService;
-import com.stagiaire.services.VilleService;
+import main.java.com.stagiaire.dao.DaoConfigurationException;
+import main.java.com.stagiaire.dao.DaoFactory;
+import main.java.com.stagiaire.dao.Database;
+import main.java.com.stagiaire.dao.DatabaseFactory;
+import main.java.com.stagiaire.services.GroupeService;
+import main.java.com.stagiaire.services.StagiaireService;
+import main.java.com.stagiaire.services.VilleService;
 public class GestionStagiairesClient {
     private static Database database = null;
     private static DaoFactory daoFactory = null;

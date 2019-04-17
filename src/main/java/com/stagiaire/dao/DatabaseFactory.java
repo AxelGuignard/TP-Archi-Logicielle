@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 public class DatabaseFactory {
-    private static final String PROPERTY_FILE = "com/stagiaires/config/dao.properties";
+    private static final String PROPERTY_FILE = "main/java/com/stagiaire/config/dao.properties";
     private static final String PROPERTY_URL = "url";
     private static final String PROPERTY_DRIVER = "driver";
     private static final String PROPERTY_USER_NAME = "userName";

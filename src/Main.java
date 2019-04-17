@@ -24,10 +24,11 @@ public class Main {
 
             if (groupeService.getAll().size() == 0)
             {
+                Date currentDate = new Date();
                 for (int i = 0; i < 10; i++)
                 {
-                    groupeService.createGroupe(new Groupe("groupe" + i));
-                }
+                    groupeService.createGroupe(new Groupe("groupe" + i,currentDate,currentDate,DateUtils.addMonths(currentDate, 1)));
+                }//Todo: resolve imports
             }
         }
         catch (IOException e)
